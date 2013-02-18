@@ -1,0 +1,123 @@
+@import 'all';
+@import 'meyer-reset';
+
+body{
+  font-family: source-sans-pro, serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  background-color: #ededed;
+}
+
+.content{
+	width: 80rem;
+	margin: 0 auto;
+}
+
+p{
+	font-size: 1.6rem;
+}
+
+header{
+	background-color: #102037;
+	background-image: url('headerbg.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+	color: #CCC;
+	img{
+		display: inline-block;
+	}
+
+	hgroup{
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 3rem;
+		h1{
+			font-weight: 300; 
+			font-size: 3.2rem;
+			display: inline-block;
+			position: relative;
+			z-index: 2;
+
+		}
+		h2{
+			font-family: alfa-slab-one;
+			font-weight: normal;
+			font-size: 4.2rem;
+			display: inline-block;
+			color: #46c0dd;
+			@include transform(rotate(-10deg));
+			border: 1px solid  #46c0dd;
+			padding: .5rem;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	p{
+		padding-top: 3rem;
+		padding-left: 2rem;
+		vertical-align: top;
+		display: inline-block;
+		width: 30rem;
+		font-size: 1.4rem;
+	}
+	.btn{
+		float: right;
+		margin-top: -4rem;
+	}	
+}
+
+.btn{
+	display: inline-block;
+	font-size: 2rem;
+	padding: .5rem 2rem;
+	margin-bottom: 1rem;
+	@include border-radius(8px);
+	@include linear-gradient(#fdc900, #fe9f00, 1);
+	//0 2px 5px rgba(0,0,0,.35), inset 0 2px rgba(255,255,255,.27)
+	@include box-shadow (0, 2px, 5px, rgba(0,0,0,.35), 1);
+	@include box-shadow (0, 2px, 5px, rgba(255,255,255,.27), 1);
+	text-decoration: none;
+	color: #333;
+
+}
+
+.site-preview{
+	width: 22rem;
+	height: 14.1rem;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #46c0dd;
+	img{
+		width: 22rem;
+		display: block;
+
+	}
+	margin: 1rem;
+	a{
+		font-size: 2rem;
+		position: absolute;
+		top: 0;
+		display: block;
+		width: 22rem;
+		height: 14.1rem;
+		span{
+			position: absolute;
+			display: block;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 2rem;
+			background-color: #FF0000;
+			text-align: right;
+			opacity: 0;
+		}
+	}
+	a:hover,a:active{
+		span{
+			background-color: rgba(220,220,220,.9);
+			opacity: 1;
+			border-top: 1px solid #46c0dd;
+		}
+	}
+
+}
