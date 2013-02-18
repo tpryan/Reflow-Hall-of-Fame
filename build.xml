@@ -32,6 +32,7 @@
 				<exclude name='build.log'/>
 				<exclude name='lib/**'/>
 				<exclude name='**/*.scss'/>
+				<exclude name='**/*.scssc'/>
 				<exclude name='**/cache/*.html'/>
 				<exclude name='**/import/**'/>
 				<exclude name='.project'/>
